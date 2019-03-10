@@ -4,7 +4,7 @@
 
 This plugin for [Linter](https://github.com/AtomLinter/Linter) provides an
 interface to [ruumba](https://github.com/ericqweinstein/ruumba). It will be used with
-files that use the Ruby syntax.
+files that use the Ruby ERB templating system syntax.
 
 ## Installation
 
