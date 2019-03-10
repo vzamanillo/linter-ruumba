@@ -1,0 +1,94 @@
+{
+  "name": "linter-ruumba",
+  "main": "./lib/init.js",
+  "private": true,
+  "version": "1.0.0",
+  "description": "RuboCop linting for ERB templates with ruumba.",
+  "repository": "https://github.com/vzamanillo/linter-ruumba.git",
+  "license": "MIT",
+  "configSchema": {
+    "executablePath": {
+      "type": "string",
+      "description": "The path to the ruumba executable. Find by running `which ruumba` or `rbenv which ruumba`",
+      "default": "ruumba"
+    },
+    "disableWhenNoConfigFile": {
+      "type": "boolean",
+      "title": "Disable when no .ruumba.yml config file is found",
+      "default": false,
+      "description": "Only run linter if a ruumba config file is found somewhere in the path for the current file."
+    },
+    "useParallelExecution": {
+      "type": "boolean",
+      "default": false,
+      "description": "Use available CPUs to execute inspection in parallel."
+    }
+  },
+  "activationHooks": [
+    "language-ruby:grammar-used",
+    "language-ruby-on-rails:grammar-used"
+  ],
+  "engines": {
+    "atom": ">=1.7.0 <2.0.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "apm test"
+  },
+  "dependencies": {
+    "atom-linter": "10.0.0",
+    "atom-package-deps": "5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "5.15.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.16.0",
+    "jasmine-fix": "1.3.1"
+  },
+  "package-deps": [
+    "linter:2.0.0"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  },
+  "renovate": {
+    "extends": [
+      "config:base"
+    ],
+    "semanticCommits": true,
+    "rangeStrategy": "pin",
+    "packageRules": [
+      {
+        "packagePatterns": [
+          "^eslint"
+        ],
+        "groupName": "ESLint packages"
+      }
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "global-require": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "atom"
+          ]
+        }
+      ]
+    },
+    "globals": {
+      "atom": true
+    },
+    "env": {
+      "node": true,
+      "browser": true
+    }
+  }
+}
