@@ -37,8 +37,7 @@ $ apm install vzamanillo/linter-ruumba
 ## Settings
 
 You can configure linter-ruumba from its settings panel or by editing
-`~/.atom/config.cson` (choose Open Your Config in Atom menu). The only thing
-that needs to be configured is the path to the `ruumba` executable.
+`~/.atom/config.cson` (choose Open Your Config in Atom menu).
 
 ### Executable Path
 
