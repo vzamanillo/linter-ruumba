@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vzamanillo/linter-ruumba.svg?branch=master)](https://travis-ci.org/vzamanillo/linter-ruumba)
+
 # linter-ruumba
 
 This plugin for [Linter](https://github.com/AtomLinter/Linter) provides an
