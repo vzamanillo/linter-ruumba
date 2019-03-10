@@ -16,7 +16,7 @@ install:
   - gem install ruumba --no-document
 
 before_script:
-  - reek --version
+  - ruumba --version
 
 ### Generic setup follows ###
 script:
