@@ -15,9 +15,6 @@ matrix:
 install:
   - gem install ruumba --no-document
 
-before_script:
-  - ruumba --version
-
 ### Generic setup follows ###
 script:
   - curl -s -O https://raw.githubusercontent.com/atom/ci/master/build-package.sh
