@@ -31,7 +31,7 @@ Now you can proceed to install the linter-ruumba plugin.
 ### Installing the Plugin
 
 ```ShellSession
-$ apm install linter-ruumba
+$ apm install vzamanillo/linter-ruumba
 ```
 
 ## Settings
