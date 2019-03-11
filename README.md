@@ -62,3 +62,5 @@ You can configure linter-ruumba from its settings panel or by editing
 
 Run `which ruumba` to find the path (if you're using rbenv run
 `rbenv which ruumba`).
+
+If you are working with a Rails project take a look at [How best to use ruumba with rubocop on a Rails project?](https://github.com/ericqweinstein/ruumba/issues/10) for an appropiated configuration.
