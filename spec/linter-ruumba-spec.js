@@ -41,7 +41,7 @@ describe('The ruumba provider for Linter', () => {
     expect(messages[0].severity).toBe('info');
     expect(messages[0].excerpt).toBe(excerpt);
     expect(messages[0].location.file).toBe(badFile);
-    expect(messages[0].location.position).toEqual([[0, 6], [0, 8]]);
+    expect(messages[0].location.position).toEqual([[2, 6], [2, 8]]);
   });
 
   it('finds nothing wrong with a valid file', async () => {
