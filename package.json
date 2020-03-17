@@ -2,7 +2,7 @@
   "name": "linter-ruumba",
   "main": "./lib/init.js",
   "private": true,
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "RuboCop linting for ERB templates with ruumba.",
   "repository": "https://github.com/vzamanillo/linter-ruumba.git",
   "license": "MIT",
